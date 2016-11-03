@@ -1,0 +1,43 @@
+.app-title {
+  font-size: 24px;
+}
+
+.box-container {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  width: 800px;
+  height: 500px;
+  max-width: 90%;
+  max-height: 90%;
+  padding: 24px;
+  margin: 24px auto;
+  border-radius: 4px;
+
+  color: #555;
+  font-family: sans-serif;
+  box-shadow:
+    0 6px 20px rgba(0, 0, 0, 0.18),
+    0 6px 6px rgba(0, 0, 0, 0.25);
+  background-color: #eee;
+}
+
+.info-container {
+  padding: 12px 16px;
+
+  line-height: 24px;
+}
+
+.list-container {
+  position: relative;
+  display: flex;
+  flex: 1 1 auto;
+  padding: 24px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.scrollbar-element {
+  position: relative;
+  flex: 1 1 auto;
+}

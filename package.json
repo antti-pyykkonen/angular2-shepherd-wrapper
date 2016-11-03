@@ -1,0 +1,55 @@
+{
+  "name": "angular2-shepherd-warpper",
+  "description": "Angular2 wrapper for Hubspot's Shepherd library",
+  "bugs": "https://github.com/antti-pyykkonen/angular2-shepherd-wrapper/issues",
+  "license": "MIT",
+  "version": "0.0.1",
+  "main": "./lib/index.js",
+  "typings": "./lib/src/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "tslint": {
+    "extends": "./tslint.json"
+  },
+  "stylelint": {
+    "extends": "./stylelint.json"
+  },
+  "scripts": {
+    "clean": "rm -rf lib node_modules",
+    "deploy": "rm -rf lib/out-tsc && npm publish",
+    "build": "webpack --config config/webpack.config.js",
+    "start": "echo \"Building the library\" && npm run build",
+    "lint": "tslint 'src/**/*.ts' && stylelint 'src/**/*.scss' --syntax scss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/antti-pyykkonen/angular2-shepherd-wrapper.git"
+  },
+  "dependencies": {
+    "tether-shepherd": "^1.8.1"
+  },
+  "devDependencies": {
+    "@angular/common": "2.0.0",
+    "@angular/compiler": "2.0.0",
+    "@angular/core": "2.0.0",
+    "@angular/http": "2.0.0",
+    "@types/core-js": "^0.9.32",
+    "@types/node": "^6.0.45",
+    "@types/tether-shepherd": "^1.2.27",
+    "angular2-template-loader": "^0.5.0",
+    "awesome-typescript-loader": "^2.2.0",
+    "core-js": "^2.4.0",
+    "expose-loader": "^0.7.1",
+    "raw-loader": "^0.5.0",
+    "reflect-metadata": "^0.1.8",
+    "rxjs": "5.0.0-beta.12",
+    "strip-sourcemap-loader": "^0.0.1",
+    "stylelint": "7.2.0",
+    "stylelint-config-standard": "^13.0.0",
+    "tslint": "3.15.0",
+    "typescript": "^2.0.0",
+    "webpack": "^2.1.0-beta.25",
+    "zone.js": "^0.6.25"
+  }
+}
