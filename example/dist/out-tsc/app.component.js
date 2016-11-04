@@ -13,16 +13,6 @@ var angular2_shepherd_wrapper_1 = require('angular2-shepherd-wrapper');
 var AppComponent = (function () {
     function AppComponent(ss) {
         this.ss = ss;
-        this.tour = new this.ss.shepherd.Tour({
-            defaults: {
-                classes: 'shepherd-theme-arrows',
-                scrollTo: true
-            }
-        });
-        this.tour.addStep('example-step', {
-            text: 'This step is attached to the bottom of the <code>.example-css-selector</code> element.',
-            attachTo: '#test bottom'
-        });
     }
     AppComponent.prototype.onClick = function () {
         this.tour.start();

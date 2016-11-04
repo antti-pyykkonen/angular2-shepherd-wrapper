@@ -1,5 +1,6 @@
+import { ShepherdStatic } from './interfaces';
 export declare class ShepherdService {
-    shepherd: TetherShepherd.ShepherdStatic;
+    shepherd: ShepherdStatic;
     constructor();
-    addTour(tour: TetherShepherd.IShepherdTour): void;
+    addTour(tour: any): void;
 }

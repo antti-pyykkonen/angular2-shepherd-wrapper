@@ -10,6 +10,7 @@ import { ShepherdService } from 'angular2-shepherd-wrapper';
 export class AppComponent {
   tour;
   constructor(private ss: ShepherdService) {
+/*
     this.tour = new this.ss.shepherd.Tour({
       defaults: {
         classes: 'shepherd-theme-arrows',
@@ -20,7 +21,7 @@ export class AppComponent {
     this.tour.addStep('example-step', {
       text: 'This step is attached to the bottom of the <code>.example-css-selector</code> element.',
       attachTo: '#test bottom'
-      });
+    });*/
     }
 
     private onClick() {
