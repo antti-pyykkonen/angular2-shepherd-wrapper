@@ -8,5 +8,22 @@ import { ShepherdService } from 'angular2-shepherd-wrapper';
   styleUrls: ['app.component.css']
 })
 export class AppComponent {
-  constructor(private ss: ShepherdService) {}
+  tour;
+  constructor(private ss: ShepherdService) {
+    this.tour = new this.ss.shepherd.Tour({
+      defaults: {
+        classes: 'shepherd-theme-arrows',
+        scrollTo: true
+      }
+    });
+
+    this.tour.addStep('example-step', {
+      text: 'This step is attached to the bottom of the <code>.example-css-selector</code> element.',
+      attachTo: '#test bottom'
+      });
+    }
+
+    private onClick() {
+      this.tour.start();
+    }
 }

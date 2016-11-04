@@ -5,15 +5,14 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class ShepherdService {
-  public shepherdInstance;
+  public shepherd: TetherShepherd.ShepherdStatic;
 
   constructor() {
-    this.shepherdInstance = Shepherd;
-    console.log(this.shepherdInstance);
+    this.shepherd = Shepherd;
   }
 
-  addTour(tour) {
-
+  addTour(tour: TetherShepherd.IShepherdTour) {
+    console.log('ayy');
   }
 
 }

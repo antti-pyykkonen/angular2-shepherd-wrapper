@@ -1,5 +1,5 @@
 export declare class ShepherdService {
-    shepherdInstance: any;
+    shepherd: TetherShepherd.ShepherdStatic;
     constructor();
-    addTour(tour: any): void;
+    addTour(tour: TetherShepherd.IShepherdTour): void;
 }
