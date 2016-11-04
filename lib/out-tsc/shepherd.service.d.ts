@@ -1,6 +1,8 @@
-import { ShepherdStatic } from './interfaces';
+import { ShepherdStatic, IShepherdTourOptions, IShepherdTour } from './interfaces';
 export declare class ShepherdService {
+    private tourStore;
     shepherd: ShepherdStatic;
     constructor();
-    addTour(tour: any): void;
+    addTour(name: string, options?: IShepherdTourOptions): IShepherdTour;
+    getTour(key: string): IShepherdTour;
 }
