@@ -1,10 +1,19 @@
+declare var require: any;
+import Shepherd = require('tether-shepherd');
+
 import { Injectable } from '@angular/core';
-import 'expose?Shepherd!tether-shepherd'
 
 @Injectable()
 export class ShepherdService {
+  public shepherdInstance;
+
   constructor() {
-    console.log(Shepherd);
+    this.shepherdInstance = Shepherd;
+    console.log(this.shepherdInstance);
+  }
+
+  addTour(tour) {
+
   }
 
 }

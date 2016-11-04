@@ -1,4 +1,5 @@
-import 'expose?Shepherd!tether-shepherd';
 export declare class ShepherdService {
+    shepherdInstance: any;
     constructor();
+    addTour(tour: any): void;
 }
