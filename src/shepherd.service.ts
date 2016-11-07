@@ -24,7 +24,7 @@ class KeyValueStore {
   }
 
   public addItem(key, value) {
-    if (key || this.getItem(key) != null) {
+    if (!key || this.getItem(key) != null) {
       return;
     }
 
